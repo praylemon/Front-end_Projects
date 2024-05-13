@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <title>Responsive backend management system with side navigation bar dashboard function</title>
+</head>
+<body>
+<section class="header">
+    <div class="logo">
+        <i class="el-icon-menu icon icon-0 menu"></i>
+        <h2><span style="color: #fd5d3b;">C</span>SDN:<span>南北极之间</span></h2>
+    </div>
+    <div class="search--notification--ptofile"...></div>
+</section>
+<section class="main">
+    <div class="sidebar">
+        <ul class="sidebar--items">
+            <li>
+                <a href="#" id="active-link">
+                    <span class="icon icon-1"><i class="el-icon-s-home"></i></span>
+                    <span class="sidebar--item">首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon icon-3">
+                        <i class="el-icon-user-solid"></i>
+                    </span>
+                    <span class="sidebar--item" style="white-space: nowrap;">教师管理</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon icon-4">
+                        <i class="el-icon-user-user"></i>
+                    </span>
+                    <span class="sidebar--item">学生管理</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon icon-2">
+                        <i class="el-icon-user-data"></i>
+                    </span>
+                    <span class="sidebar--item">课程安排</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon icon-5">
+                        <i class="el-icon-s-data"></i>
+                    </span>
+                    <span class="sidebar--item">成绩管理</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon icon-6"><i class="el-icon-service"></i></span>
+                    <span class="sidebar--item">意见反馈</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="sidebar--bottom-items">
+            <li>
+                <a href="#">
+                    <span class="icon icon-7"><i class="el-icon-setting"></i></span>
+                    <span class="sidebar--item">设置</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main--content">
+        <div class="overview">
+            <div class="title">
+                <h2 class="section--title">数据</h2>
+                <select name="date" id="date1" class="dropdown">
+                    <option value="today">今天</option>
+                    <option value="lastweek">上周</option>
+                    <option value="lastmonth">上个月</option>
+                    <option value="lastyear">去年</option>
+                    <option value="alltime">所有时间</option>
+                </select>
+            </div>
+            <div class="cards">
+                <div class="card card-1">
+                    <div class="card--data">
+                        <div class="card--content">
+                            <h5 class="card--title">教师总量</h5>
+                            <h1>199</h1>
+                        </div>
+                        <i class="el-icon-user-solid card--icon--lg"></i>
+                    </div>
+                    <div class="card--state">
+                        <span><i class="el-icon-s-data card--icon stat--icon"></i>82%</span>
+                        <span><i class="el-icon-caret-top card--icon up--arrow"></i>20</span>
+                        <span><i class="el-icon-bottom card--icon down--arrow"></i>12</span>
+                    </div>
+                </div>
+                <div class="card card-2">
+                    <div class="card--data">
+                        <div class="card--content">
+                            <h5 class="card--title">学生总量</h5>
+                            <h1>1234</h1>
+                        </div>
+                        <i class="el-icon-date card--icon--lg"></i>
+                    </div>
+                    <div class="card--stats">
+                        <span><i class="el-icon-s-data card--icon stat--icon"></i>90%</span>
+                        <span><i class="el-icon-caret-top card--icon up--arrow"></i>350</span>
+                        <span><i class="el-icon-bottom card--icon down--arrow"></i>25</span>
+                    </div>
+                </div>
+                <div class="card card-3">
+                    <div class="card--data">
+                        <div class="card--content">
+                            <h5 class="card--title">课程安排</h5>
+                            <h1>102</h1>
+                        </div>
+                        <i class="el-icon-date card--icon--lg"></i>
+                    </div>
+                    <div class="card--stats">
+                        <span><i class="el-icon-s-data card--icon stat--icon"></i>86%</span>
+                        <span><i class="el-icon-caret-top card--icon up--arrow"></i>31</span>
+                        <span><i class="el-icon-bottom card--icon down--arrow"></i>12</span>
+                    </div>
+                </div>
+                <div class="card card-4">
+                    <div class="card--data">
+                        <div class="card--content">
+                            <h5 class="card--title">成绩数据</h5>
+                            <h1>2653</h1>
+                        </div>
+                        <i class="el-icon-s-data card--icon--lg"></i>
+                    </div>
+                    <div class="card--stats">
+                        <span><i class="el-icon-s-data card--icon stat--icon"></i>86%</span>
+                        <span><i class="el-icon-caret-top card--icon up--arrow"></i>60</span>
+                        <span><i class="el-icon-bottom card--icon down--arrow"></i>32</span>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="teachers">
+            <div class="title">
+                <h2 class="section--title">教师</h2>
+                <div class="teachers--right--btns">
+                    <select name="date" id="date2" class="下拉老师--过滤器">
+                        <option>筛选</option>
+                        <option value="free">小学教师</option>
+                        <option value="scheduled">中学教师</option>
+                    </select>
+                    <button class="add"><i class="ri--add-line"></i>添加教师</button>
+                </div>
+            </div>
+            <div class="teachers--cards">
+                <a href="#" class="teachers--card">
+                    <div class="img--box--cover img--box--cover1">
+                        <div class="img--box">
+                            <i class="el-icon-s-custom card--icon--lg"></i>
+                        </div>
+                    </div>
+                    <p class="free">小学教师</p>
+                </a>
+                <a href="#" class="teachers--card">
+                    <div class="img--box--cover">
+                        <div class="img--box">
+                            <i class="el-icon-s-custom card--icon--lg c2"></i>
+                        </div>
+                    </div>
+                    <p class="scheduled">中学教师</p>
+                </a>
+                <a href="#" class="teachers--card">
+                    <div class="img--box--cover">
+                        <div class="img--box">
+                            <i class="el-icon-s-custom card--icon--lg c2"></i>
+                        </div>
+                    </div>
+                    <p class="scheduled">中学教师</p>
+                </a>
+                <a href="#" class="teachers--card">
+                    <div class="img--box--cover img--box--cover1">
+                        <div class="img--box">
+                            <i class="el-icon-s-custom card--icon--lg c1"></i>
+                        </div>
+                    </div>
+                    <p class="scheduled">小学教师</p>
+                </a>
+                <a href="#" class="teachers--card">
+                    <div class="img--box--cover">
+                        <div class="img--box">
+                            <i class="el-icon-s-custom card--icon--lg c2"></i>
+                        </div>
+                    </div>
+                    <p class="scheduled">中学教师</p>
+                </a>
+                <a href="#" class="teachers--card">
+                    <div class="img--box--cover img--box--cover1">
+                        <div class="img--box">
+                            <i class="el-icon-s-custom card--icon--lg c1"></i>
+                        </div>
+                    </div>
+                    <p class="scheduled">小学教师</p>
+                </a>
+                <a href="#" class="teachers--card">
+                    <div class="img--box--cover">
+                        <div class="img--box">
+                            <i class="el-icon-s-custom card--icon--lg c2"></i>
+                        </div>
+                    </div>
+                    <p class="scheduled">中学教师</p>
+                </a>
+            </div>
+        </div>
+        <div class="recent-students">
+            <div class="title">
+                <h2 class="section--title">学生</h2>
+                <div class="teachers--right--btns">
+                    <select name="date" id="date3" class="下拉教师--过滤器">
+                        <option value="name">姓名</option>
+                        <option value="status">学号</option>
+                    </select>
+                    <button class="add"><i class="ri--add-line"></i>添加学生</button>
+                </div>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <th>学号</th>
+                        <th>注册日期</th>
+                        <th>性别</th>
+                        <th>年龄</th>
+                        <th>设置</th>                            
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Sam</td>
+                        <td>1001</td>
+                        <td>30/10/2002</td>
+                        <td>Male</td>
+                        <td>22</td>
+                        <td><span><i class="el-icon-edit edit"></i><i class="el-icon-delete delete"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td>Shi Shi Li</td>
+                        <td>1001</td>
+                        <td>30/10/2002</td>
+                        <td>Female</td>
+                        <td>22</td>
+                        <td><span><i class="el-icon-edit edit"></i><i class="el-icon-delete delete"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td>Hong</td>
+                        <td>1001</td>
+                        <td>30/10/2002</td>
+                        <td>Female</td>
+                        <td>22</td>
+                        <td><span><i class="el-icon-edit edit"></i><i class="el-icon-delete delete"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td>Ming</td>
+                        <td>1001</td>
+                        <td>30/10/2002</td>
+                        <td>Male</td>
+                        <td>22</td>
+                        <td><span><i class="el-icon-edit edit"></i><i class="el-icon-delete delete"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td>Wang</td>
+                        <td>1001</td>
+                        <td>30/10/2002</td>
+                        <td>Famale</td>
+                        <td>22</td>
+                        <td><span><i class="el-icon-edit edit"></i><i class="el-icon-delete delete"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td>Lee</td>
+                        <td>1001</td>
+                        <td>30/10/2002</td>
+                        <td>Male</td>
+                        <td>22</td>
+                        <td><span><i class="el-icon-edit edit"></i><i class="el-icon-delete delete"></i></span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
